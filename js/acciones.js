@@ -5,7 +5,7 @@ $(document).ready(function (e){
 	
 });
 
-	function onDeviceready(){
+	function onDeviceReady(){
 		
 		$('#posicion').on('click',function(){
 			getPosition ();
@@ -18,7 +18,7 @@ $(document).ready(function (e){
 			maximumAge:3600000	
 		}
 		
-		var watchID= navigator.geolocation.getCurrentPosition(OnSuccess,onError,options);
+		var watchID=navigator.geolocation.getCurrentPosition(OnSuccess,onError,options);
 		
 		function onSuccess(position){
 			
